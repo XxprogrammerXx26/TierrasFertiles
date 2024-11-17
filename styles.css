@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('img/Cultivos.jpg'); /* Cambia por tu propia URL */
+    background-image: url('/Frontend/img/Cultivos.jpg'); /* Cambia por tu propia URL */
     background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-attachment: fixed; /* Hace que la imagen se quede fija cuando se haga scroll */
@@ -196,7 +196,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('img/Cultivos.jpg'); /* Cambia la URL de la imagen */
+    background-image: url('/Frontend/img/Cultivos.jpg'); /* Cambia la URL de la imagen */
     background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-attachment: fixed; /* Fija la imagen mientras haces scroll */
@@ -357,6 +357,16 @@ body {
         font-size: 16px; /* Botones más grandes en pantallas grandes */
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

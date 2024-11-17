@@ -1,0 +1,262 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Barra Lateral (Sidebar) */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #007B55; /* Color verde */
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.sidebar-header h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li a.active {
+    background-color: #004d28; /* Color más oscuro cuando se pasa el mouse */
+}
+
+/* Barra superior para dispositivos móviles */
+.top-nav {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007B55;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-nav .menu-btn {
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.top-nav .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.top-nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Contenido Principal */
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    transition: margin-left 0.3s ease;
+}
+
+.main-header {
+    background-color: #007B55;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.main-header h1 {
+    font-size: 28px;
+}
+
+/* Sección Resumen */
+.overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.overview-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.overview-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.overview-item p {
+    font-size: 16px;
+}
+
+.overview-data p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007B55;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 1024px) {
+    .main-content {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .overview {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .overview-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .recent-activity {
+        padding: 15px;
+    }
+
+    .alerts {
+        padding: 15px;
+    }
+
+    .top-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Barra lateral se oculta en pantallas pequeñas */
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .sidebar-header h2 {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .top-nav {
+        display: flex;
+    }
+
+    .top-nav .menu-btn {
+        display: block;
+    }
+
+    .overview {
+        flex-direction: column;
+    }
+
+    .overview-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .recent-activity ul li {
+        font-size: 14px;
+    }
+
+    .alerts ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header h1 {
+        font-size: 18px;
+    }
+
+    .overview-item h3 {
+        font-size: 18px;
+    }
+
+    .overview-data p {
+        font-size: 20px;
+    }
+
+    .recent-activity ul li {
+        font-size: 12px;
+    }
+
+    .alerts ul li {
+        font-size: 12px;
+    }
+
+    .alert-level {
+        font-size: 12px;
+    }
+}
+
+/* Botón de hamburguesa para abrir/cerrar la barra lateral */
+.sidebar-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .sidebar-toggle {
+        display: block;
+    }
+}
+
