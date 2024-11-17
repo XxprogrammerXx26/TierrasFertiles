@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema de Monitoreo de Tierras Fértiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Dashboard - Monitoreo de Fertilidad del Suelo</h1>
+            <button onclick="logout()">Cerrar sesión</button>
+        </header>
+
+        <section class="monitoring-info">
+            <h2>Datos del Suelo</h2>
+            <div id="soilData">
+                <!-- Los datos del suelo se mostrarán aquí mediante JS -->
+            </div>
+        </section>
+
+        <section class="alerts">
+            <h2>Alertas</h2>
+            <div id="alerts">
+                <!-- Las alertas se mostrarán aquí mediante JS -->
+            </div>
+        </section>
+
+        <section class="recommendations">
+            <h2>Recomendaciones</h2>
+            <div id="recommendations">
+                <!-- Las recomendaciones se mostrarán aquí -->
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('img/Cultivos.jpg'); /* Cambia por tu propia URL */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen se quede fija cuando se haga scroll */
+}
+
+/* Formulario */
+.form {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para que la imagen se vea */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Tamaño máximo en pantallas grandes */
+    box-sizing: border-box; /* Para incluir padding en el ancho total */
+}
+
+#heading {
+    text-align: center;
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-field:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.button1, .button2 {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button1:hover, .button2:hover {
+    background-color: #45a049;
+}
+
+.button3 {
+    background-color: #FFC107;
+    color: #333;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.button3:hover {
+    background-color: #ff9800;
+}
+
+.button3:focus {
+    outline: none;
+}
+
+.field input {
+    background-color: #f0f8e2;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas de móvil (menos de 600px) */
+@media (max-width: 600px) {
+    .form {
+        padding: 20px;
+    }
+    
+    #heading {
+        font-size: 20px; /* Reduce el tamaño del título */
+    }
+
+    .input-field {
+        font-size: 14px; /* Ajusta el tamaño de la fuente de los inputs */
+    }
+
+    .button1, .button2, .button3 {
+        font-size: 14px; /* Ajusta el tamaño de los botones */
+    }
+
+    .btn {
+        flex-direction: column; /* Los botones se apilan en móviles */
+        gap: 10px;
+    }
+}
+
+/* Pantallas de tablet (600px a 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .form {
+        width: 90%;
+    }
+
+    #heading {
+        font-size: 22px; /* Título ligeramente más pequeño en tabletas */
+    }
+
+    .input-field {
+        font-size: 15px; /* Ajusta el tamaño de la fuente de los inputs */
+    }
+
+    .button1, .button2, .button3 {
+        font-size: 15px; /* Ajusta el tamaño de los botones */
+    }
+
+    .btn {
+        flex-direction: row; /* Mantiene los botones en fila */
+        gap: 10px;
+    }
+}
+
+/* Pantallas grandes (más de 1024px) */
+@media (min-width: 1024px) {
+    .form {
+        max-width: 500px; /* Tamaño máximo del formulario en pantallas grandes */
+    }
+
+    #heading {
+        font-size: 26px; /* Título más grande en pantallas grandes */
+    }
+
+    .input-field {
+        font-size: 16px; /* Tamaño de fuente estándar para pantallas grandes */
+    }
+
+    .button1, .button2, .button3 {
+        font-size: 16px; /* Botones más grandes en pantallas grandes */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Register Part */
+
+
+/* Estilos base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('img/Cultivos.jpg'); /* Cambia la URL de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen mientras haces scroll */
+}
+
+/* Formulario */
+.form {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para que la imagen se vea */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Tamaño máximo en pantallas grandes */
+    box-sizing: border-box; /* Para incluir padding en el ancho total */
+}
+
+#heading {
+    text-align: center;
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-field:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.button1, .button2 {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button1:hover, .button2:hover {
+    background-color: #45a049;
+}
+
+.button3 {
+    background-color: #FFC107;
+    color: #333;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.button3:hover {
+    background-color: #ff9800;
+}
+
+.button3:focus {
+    outline: none;
+}
+
+.field input {
+    background-color: #f0f8e2;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas de móvil (menos de 600px) */
+@media (max-width: 600px) {
+    .form {
+        padding: 20px;
+    }
+    
+    #heading {
+        font-size: 20px; /* Reduce el tamaño del título */
+    }
+
+    .input-field {
+        font-size: 14px; /* Ajusta el tamaño de la fuente de los inputs */
+    }
+
+    .button1, .button2, .button3 {
+        font-size: 14px; /* Ajusta el tamaño de los botones */
+    }
+
+    .btn {
+        flex-direction: column; /* Los botones se apilan en móviles */
+        gap: 10px;
+    }
+}
+
+/* Pantallas de tablet (600px a 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .form {
+        width: 90%;
+    }
+
+    #heading {
+        font-size: 22px; /* Título ligeramente más pequeño en tabletas */
+    }
+
+    .input-field {
+        font-size: 15px; /* Ajusta el tamaño de la fuente de los inputs */
+    }
+
+    .button1, .button2, .button3 {
+        font-size: 15px; /* Ajusta el tamaño de los botones */
+    }
+
+    .btn {
+        flex-direction: row; /* Mantiene los botones en fila */
+        gap: 10px;
+    }
+}
+
+/* Pantallas grandes (más de 1024px) */
+@media (min-width: 1024px) {
+    .form {
+        max-width: 500px; /* Tamaño máximo del formulario en pantallas grandes */
+    }
+
+    #heading {
+        font-size: 26px; /* Título más grande en pantallas grandes */
+    }
+
+    .input-field {
+        font-size: 16px; /* Tamaño de fuente estándar para pantallas grandes */
+    }
+
+    .button1, .button2, .button3 {
+        font-size: 16px; /* Botones más grandes en pantallas grandes */
+    }
+}
+
+
+
+
+
+
+
+
